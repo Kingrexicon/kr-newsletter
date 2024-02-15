@@ -1,0 +1,221 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /* border: solid 1px red; */
+
+
+}
+
+body {
+
+    /* height: 100vh; */
+    background: hsl(235, 18%, 26%);
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-family: "roboto", sans-serif;
+}
+
+
+
+.card {
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 600px;
+    height: 390px;
+    display: flex;
+    padding-bottom: 5px;
+position: relative;
+top: 70px;
+}
+
+ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0;
+    /* border: 1px solid red; */
+ 
+}
+
+ul li {
+    /* margin: 1px; */
+    display: flex;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    /* box-sizing: ; */
+
+}
+
+
+.left-card {
+    /* background-color: aqua; */
+    width: 53%;
+    height: 375px;
+
+    /* padding-top: 60px;/ */
+    padding-inline: 20px;
+    font-size: 12px;
+    position: relative;
+    color: hsl(234, 29%, 20%);
+    font-weight: 600;
+    /* background-color: aquamarine; */
+}
+
+.head {
+    position: absolute;
+    top: 10%;
+}
+
+ul {
+    position: absolute;
+    top: 34%;
+}
+
+form {
+    position: absolute;
+    top: 60%;
+}
+
+
+
+.left-card h1 {
+    font-size: 35px;
+
+}
+
+.right-card {
+    width: 47%;
+    height: 375px;
+    border: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+}
+
+.right-card .mobil {
+    display:none;
+}
+form {
+    /* padding-right: 35px; */
+    /* background: hsl(235, 18%, 26%); */
+    display: flex;
+    width: 260px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+button {
+    border: none;
+    background: hsl(235, 18%, 26%);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400px;
+    padding-inline: 15px;
+    color: white;
+}
+
+button:hover {
+    box-shadow: 0 14px 17px 1px rgba(46, 17, 17, 0.385);
+    background: linear-gradient(to right, rgb(255, 82, 123), rgb(255, 106, 58));
+}
+
+input {
+    border: 1px rgba(128, 128, 128, 0.593) solid;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+
+input:hover {
+    border: 1px rgba(0, 0, 0, 0.747) solid;
+    border-top: 1px rgba(128, 128, 128, 0.593) solid;
+}
+
+input::placeholder {
+    /* color: aqua; */
+    font-family: "roboto", sans-serif;
+    /* font-size: px; */
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: white;
+    }
+
+
+    .card {
+        margin: auto;
+        height: fit-content;
+        border: 1px solid red;
+        width: 100%;
+        background: white;
+        border-radius: 20px;
+        padding: 0px;
+        margin: 0;
+        position: relative;
+        top: 0;
+        /* width: 900px; */
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .right-card .desktop{
+        display: none;
+    }
+    .right-card .mobil{
+        display: block;
+        width: 100%;
+    }
+
+
+
+    .head {
+        position: absolute;
+        top: 10%;
+        margin-left:20px ;
+
+    }
+    
+    ul {
+        position: absolute;
+        top: 34%;
+        margin-left:20px ;
+    }
+    
+    form {
+        position: absolute;
+        top: 60%;
+        margin-left:20px ;
+
+    }
+    .right-card{
+        width:100%;
+        margin: 0px;
+        padding: 0px;
+        height: fit-content;
+    }
+
+    .left-card {
+        /* background-color: aqua; */
+        width: 100%;
+        /* align-self: center; */
+        /* height: 375px; */
+    
+        /* padding-top: 60px;/ */
+        padding-inline: 11px;
+        /* padding-left: 20px; */
+        font-size: 12px;
+        position: relative;
+        top: 0;
+        color: hsl(234, 29%, 20%);
+        font-weight: 600;
+        /* background-color: aquamarine; */
+    }
+
+}

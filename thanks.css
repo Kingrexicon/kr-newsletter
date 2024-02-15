@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    font-family: "roboto", sans-serif;
+
+}
+
+
+.card {
+    border-radius: 18px;
+    width: 220px;
+    height: 260px;
+    margin: auto;
+    padding-inline: 20px;
+    background-color: white;
+    position: relative;
+    top: 150px;
+
+
+
+}
+
+.card p, .card button, .card svg {
+    /* border: 1px red groove; */
+    text-wrap: balance;
+}
+
+.card svg {
+    position: absolute;
+    top: 15%;
+}
+
+.card #head {
+    width: 220px;
+    position: absolute;
+    top: 33%;
+}
+
+.card #text {
+    width: 230px;
+    position: absolute;
+    /* border: solid 1px red ; */
+    text-wrap: wrap;
+    top: 55%;
+}
+
+.card button {
+    position: absolute;
+    top: 75%;
+}
+
+
+.card button {
+    margin-top: 15px;
+    margin-left: 5px;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 7px;
+    background: hsl(235, 18%, 26%);
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    
+}
+
+.card button:hover{
+    box-shadow: 0 14px 17px 1px  rgba(46, 17, 17, 0.385);
+    background: linear-gradient(to right, rgb(255, 82, 123), rgb(255, 106, 58));
+}
+
+
+@media only screen and (max-width:600px) {
+    body {
+        width: 90%;
+        background-color: white;
+    }
+
+    .card button {
+        width: 80%;
+        /* background: hsl(235, 18%, 26%); */
+        top: 80%;
+
+    }
+
+    .card {
+        height: 100vh;
+        margin: auto;
+        /* margin-left: 0px; */
+        padding-inline: 30px;
+        position: relative;
+        top: 0;
+
+    }
+
+    .card svg {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 15%;
+    }
+    
+    .card #head {
+        width: 250px;
+        position: absolute;
+        font-size: 40px !important;
+        line-height: 35px !important;
+        top: 33%;
+    }
+    
+    .card #text {
+        /* border: 1px solid red; */
+        position: absolute;
+        font-size: 12px !important;
+        width: 270px ;
+        top: 50%;
+    }
+    
+    .card button {
+        position: absolute;
+        font-size: 12px;
+        padding: 10px;
+        top: 85%;
+    }
+    
+
+
+}
